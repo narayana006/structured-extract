@@ -1,0 +1,20 @@
+NORTHWIND PAPER SUPPLY CO.
+48 Harbour Street, Portland, ME 04101
+
+INVOICE                                   Invoice no: INV-2024-0317
+                                          Date: 2024-03-14
+Bill to:                                  Due: 2024-04-13
+  Brightside Dental Group
+  Attn: Accounts Payable
+
+Description                     Qty    Unit price     Amount
+------------------------------------------------------------
+A4 copy paper, 80gsm (box)       12         38.50     462.00
+Thermal receipt rolls (case)      4         61.25     245.00
+Delivery                          1         18.00      18.00
+------------------------------------------------------------
+                                          Subtotal    725.00
+                                          Tax (5.5%)   39.88
+                                          TOTAL USD   764.88
+
+Payment terms: net 30. Please quote the invoice number with your payment.

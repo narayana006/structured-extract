@@ -1,0 +1,28 @@
+{
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["invoice_number", "vendor", "customer", "issue_date", "currency", "total", "line_items"],
+  "properties": {
+    "invoice_number": {"type": "string", "pattern": "^INV-\\d{4}-\\d{4}$"},
+    "vendor": {"type": "string"},
+    "customer": {"type": "string"},
+    "issue_date": {"type": "string", "format": "date"},
+    "due_date": {"type": ["string", "null"], "format": "date"},
+    "currency": {"enum": ["USD", "EUR", "GBP"]},
+    "total": {"type": "number", "minimum": 0},
+    "line_items": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["description", "quantity", "amount"],
+        "properties": {
+          "description": {"type": "string"},
+          "quantity": {"type": "integer", "minimum": 1},
+          "amount": {"type": "number"}
+        }
+      }
+    }
+  }
+}

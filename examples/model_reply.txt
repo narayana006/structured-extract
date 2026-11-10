@@ -1,0 +1,20 @@
+Sure! Here is the extracted invoice:
+
+```json
+{
+  "invoice_number": "INV-2024-0317",
+  "vendor": "Northwind Paper Supply Co.",
+  "customer": "Brightside Dental Group",
+  "issue_date": "2024-03-14",
+  "due_date": "2024-04-13",
+  "currency": "USD",
+  "total": "764.88",
+  "line_items": [
+    {"description": "A4 copy paper, 80gsm (box)", "quantity": 12, "amount": 462.00},
+    {"description": "Thermal receipt rolls (case)", "quantity": 4, "amount": 245.00},
+    {'description': 'Delivery', 'quantity': 1, 'amount': 18.00},
+  ]
+}
+```
+
+Let me know if you need anything else.
