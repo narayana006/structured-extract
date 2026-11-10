@@ -1,0 +1,34 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "structured-extract"
+version = "0.1.0"
+description = "Schema in, validated JSON out: extract structured data from messy text with a validate-and-repair loop and source spans."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [{ name = "Narayana Vemburaj" }]
+keywords = ["llm", "extraction", "json", "json-schema", "validation"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+]
+dependencies = []
+
+[project.optional-dependencies]
+pydantic = ["pydantic>=2"]
+dev = ["pytest>=7", "pydantic>=2"]
+
+[project.scripts]
+structured-extract = "structured_extract.cli:main"
+
+[project.urls]
+Homepage = "https://github.com/narayana006/structured-extract"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
